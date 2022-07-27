@@ -1,0 +1,44 @@
+.intro{
+  margin-top: 34px;
+  background-image: url(../img/backgorund-coffe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-left: 85px;
+}
+
+.intro__content{
+  width: 520px;
+}
+
+.intro__title{
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+}
+
+.intro__description{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FEFCF7;
+  mix-blend-mode: normal;
+  margin-top: 32px;
+  opacity: 0.8;
+}
+
+.intro-link{
+  display: inline-flex;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FEFCF7;
+  background: #0E8784;
+  border-radius: 6px;
+  padding: 15px 31px;
+  margin-top: 56px;
+  margin-bottom: 116px;
+}
