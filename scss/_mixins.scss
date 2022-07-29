@@ -8,6 +8,15 @@
   background-color: #2C343E;
   border-radius: $big-radius;
   padding: 100px 85px;
-  color: #fff;
+  color: #FEFCF7;
 }
 
+@mixin heading-2{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #FEFCF7;
+}

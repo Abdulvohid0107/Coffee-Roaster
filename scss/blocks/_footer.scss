@@ -1,0 +1,27 @@
+.footer{
+  background: #2C343E;
+}
+
+.footer__container{
+  padding-left: 50px;
+  // padding-right: 50px;
+  display: flex;
+  align-items: center ;
+}
+
+.footer__nav{
+  margin-left: 103px;
+  margin-right: 370px;
+}
+
+.footer__social-media-links{
+  display: flex;
+}
+
+.footer__media-link{
+  margin-right: 24px;
+}
+
+.footer__media-link:last-child{
+  margin-right: 0;
+}

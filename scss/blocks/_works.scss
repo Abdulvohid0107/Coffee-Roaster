@@ -1,0 +1,38 @@
+// .works{
+//   padding-left: 85px;
+// }
+
+.works__title{
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  margin-bottom: 80px;
+  padding-left: 110px;
+}
+
+.works__list{
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.works__list::before{
+  position: absolute;
+  right: 390px;
+  top: 15px;
+  content: '';
+  display: block;
+  width: 760px;
+  height: 1px;
+  background-color: #FDD6BA;
+
+}
+
+.works__link-wrapper{
+  margin-top: 79px;
+  padding-left: 110px;
+}

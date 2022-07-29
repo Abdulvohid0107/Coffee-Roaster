@@ -1,0 +1,71 @@
+
+.works-item{
+  width: 285px;
+  margin-right: 95px;
+}
+
+.works-item:last-child{
+  margin-right: 0;
+}
+
+.works__item-number{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+}
+
+  
+.works-item{
+  width: 285px;
+  margin-right: 95px;
+}
+
+.works-item:last-child{
+  margin-right: 0;
+}
+
+.works-item__number{
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FDD6BA;
+  margin: 0;
+}
+
+.works-item__number::before{
+  content: '';
+  display: block;
+  width: 31px;
+  height: 31px;
+  background: #FEFCF7;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  margin-bottom: 67px;
+  position: relative;
+  z-index: 1;
+}
+
+.works-item__title{
+  columns: $dark;
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0;
+  margin: 38px 0 42px;
+}
+
+.works-item__title--coffee{
+  width: 255px;
+}
+
+.works-item__description{
+  margin: 0;
+}
+

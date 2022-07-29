@@ -1,0 +1,93 @@
+.benefits{
+  @include box;
+  padding-bottom: 317px;
+  margin-bottom: 351px;
+}
+
+.benefits__title{
+  margin: 0 0 32px 0;
+  @include heading-2
+}
+
+.benefits__description{
+  width: 540px;
+  margin: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.benefits__list{
+  @include reset-list;
+  display: flex;
+  justify-items: center;
+  margin-top: 86px;
+  position: absolute;
+}
+
+.benefits__item{
+  background-color: $yashil;
+  margin-right: 30px;
+  width: 350px;
+  border-radius: $mid-radius;
+  padding: 72px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits__item:last-child{
+  margin-right: 0;
+}
+
+.benefits__item--quality::before{
+  content: '';
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/coffee-bean.svg);
+  background-repeat: no-repeat;
+  // margin: 0 auto;
+}
+
+.benefits__item--exclusive::before{
+  content: '';
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/exclusive-benefits.svg);
+  background-repeat: no-repeat;
+  // margin: 0 auto;
+}
+
+.benefits__item--shipping::before{
+  content: '';
+  display: block;
+  width: 72px;
+  height: 72px;
+  background-image: url(../../img/delivery.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  // margin: 0 auto;
+}
+
+.benefits__item-title{
+  font-family: 'Fraunces';
+  margin: 0;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #FEFCF7;
+}
+
+.benefits__item-title:last-child{
+  margin-top: 100px;
+}
+
+.benefits__item-description{
+  margin: 0;
+  width: 255px;
+  text-align: center;
+}
