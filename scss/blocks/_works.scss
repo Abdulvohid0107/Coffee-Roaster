@@ -1,6 +1,9 @@
-// .works{
-//   padding-left: 85px;
-// }
+.works{
+  width: 1110px;
+  display: block;
+  margin: 0 auto;
+  display: none;
+}
 
 .works__title{
   font-family: 'Fraunces', serif;
@@ -10,29 +13,27 @@
   line-height: 32px;
   color: #83888F;
   margin-bottom: 80px;
-  padding-left: 110px;
 }
 
 .works__list{
   @include reset-list;
   display: flex;
-  justify-content: center;
+  width: 1045px;
+  justify-content: space-between;
   position: relative;
 }
 
 .works__list::before{
   position: absolute;
-  right: 390px;
+  right: 285px;
   top: 15px;
   content: '';
   display: block;
   width: 760px;
   height: 1px;
   background-color: #FDD6BA;
-
 }
 
 .works__link-wrapper{
-  margin-top: 79px;
-  padding-left: 110px;
+  margin: 64px 0 200px;
 }

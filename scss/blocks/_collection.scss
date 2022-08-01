@@ -1,5 +1,6 @@
 .collection{
   margin-top: 136px;
+  display: none;
 }
 
 .collection__title{
@@ -8,7 +9,8 @@
   font-weight: 900;
   position: relative;
   text-transform: lowercase;
-  opacity: 0.3;
+  opacity: 0.5;
+  line-height: 1.5;
 
   &::before{
     position: absolute;

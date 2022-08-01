@@ -2,6 +2,7 @@
   @include box;
   padding-bottom: 317px;
   margin-bottom: 351px;
+  display: none;
 }
 
 .benefits__title{
@@ -19,7 +20,7 @@
 .benefits__list{
   @include reset-list;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   margin-top: 86px;
   position: absolute;
 }
@@ -46,7 +47,6 @@
   height: 72px;
   background-image: url(../../img/coffee-bean.svg);
   background-repeat: no-repeat;
-  // margin: 0 auto;
 }
 
 .benefits__item--exclusive::before{

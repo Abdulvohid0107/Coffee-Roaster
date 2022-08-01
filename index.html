@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BEM</title>
+    <title>Coffee roasters</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -21,6 +21,9 @@
                     <li class="nav__list-item">Create your plan</li>
                 </ul>
             </nav>
+            <button class="site-header__button">
+                <img src="./img/menu.svg" class="site-header__button-img" alt="Menu">
+            </button>
         </div>
     </header>
 
@@ -31,7 +34,7 @@
             <div class="intro__content">
                 <p class="intro__title">Great coffee made simple.</p>
                 <p class="intro__description">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
-                <a href="#" class="intro-link main-link">Create your plan</a>
+                <a href="#" class="intro__link main-link">Create your plan</a>
             </div>
         </div>
         <!-- // INTRO -->
@@ -125,18 +128,20 @@
                 <a href="" class="footer__logo">
                     <img src="img/site-logo-white.svg" alt="Site logo" class="footer__logo-img">
                 </a>
-                <nav class="nav footer__nav">
-                    <ul class="nav__list">
-                        <li class="nav__list-item">Home</li>
-                        <li class="nav__list-item">About us</li>
-                        <li class="nav__list-item">Create your plan</li>
+                <div class="footer__nav-media-wrapper">
+                    <nav class="nav footer__nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-item">Home</li>
+                            <li class="nav__list-item">About us</li>
+                            <li class="nav__list-item">Create your plan</li>
+                        </ul>
+                    </nav>
+                    <ul class="footer__social-media-links">
+                        <li class="footer__media-link"><img src="img/facebook.png" alt="Facebook"></li>
+                        <li class="footer__media-link"><img src="img/twitter.png" alt="Twitter"></li>
+                        <li class="footer__media-link"><img src="img/instagram.png" alt="Instagram"></li>
                     </ul>
-                </nav>
-                <ul class="footer__social-media-links">
-                    <li class="footer__media-link"><img src="img/facebook.png" alt="Facebook"></li>
-                    <li class="footer__media-link"><img src="img/twitter.png" alt="Twitter"></li>
-                    <li class="footer__media-link"><img src="img/instagram.png" alt="Instagram"></li>
-                </ul>
+                </div>
             </div>
         </footer>
         <!-- // FOOTER -->

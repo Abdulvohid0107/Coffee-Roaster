@@ -23,3 +23,35 @@
 .nav__list-item:last-child{
   margin-right: 0;
 }
+
+
+.site-header__button{
+  background-color: transparent;
+  border: none;
+  display: none;
+  // width: 16px;
+  // height: 15px;
+}
+
+.site-header__button-img{
+  width: 16px;
+  height: 15px;
+}
+
+// RESPONSIVE
+@media only screen and (max-width: $mobile) {
+  
+  .site-header__nav{
+    display: none;
+  }
+  
+  .site-header__button{
+    display: inline-block;
+    // width: 16px;
+    // height: 15px;
+  }
+  .site-header__logo-img{
+    width: 140px;
+    height: 18px;
+  }
+}

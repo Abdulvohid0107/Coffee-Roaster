@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-left: 85px;
+  padding-bottom: 116px;
+  display: none;
 }
 
 .intro__content{
@@ -25,22 +27,11 @@
   line-height: 26px;
   color: #FEFCF7;
   mix-blend-mode: normal;
+  margin: 0;
   margin-top: 32px;
   opacity: 0.8;
 }
 
-.intro-link{
-  font-family: 'Fraunces', serif;
-  display: inline-flex;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #FEFCF7;
-  background: #0E8784;
-  border-radius: 6px;
-  padding: 15px 31px;
+.intro__link{
   margin-top: 56px;
-  margin-bottom: 116px;
 }

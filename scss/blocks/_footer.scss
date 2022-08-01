@@ -1,20 +1,27 @@
 .footer{
   background: #2C343E;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  padding-left: 85px;
+  padding-right: 85px;
+  display: none;
 }
 
 .footer__container{
-  padding-left: 50px;
-  // padding-right: 50px;
   display: flex;
   align-items: center ;
+  justify-content: space-between;
 }
 
-.footer__nav{
-  margin-left: 103px;
-  margin-right: 370px;
+.footer__nav-media-wrapper{
+  width: 772px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__social-media-links{
+  @include reset-list;
   display: flex;
 }
 
