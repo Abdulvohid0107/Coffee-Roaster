@@ -515,10 +515,10 @@ template {
 }
 .collection {
   margin-top: 136px;
-  display: none;
 }
 
 .collection__title {
+  margin: 0;
   font-family: "Fraunces", serif;
   font-size: 150px;
   text-align: center;
@@ -527,6 +527,7 @@ template {
   text-transform: lowercase;
   opacity: 0.5;
   line-height: 1.5;
+  color: #333D4B;
 }
 .collection__title::before {
   position: absolute;
@@ -536,7 +537,7 @@ template {
   bottom: 0%;
   content: "";
   display: block;
-  background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+  background: linear-gradient(180deg, rgba(254, 252, 247, 0.412) 0%, #fefcf7 100%);
 }
 
 .collection__list {
@@ -547,7 +548,7 @@ template {
   flex-wrap: wrap;
   align-items: end;
   justify-content: center;
-  transform: translateY(calc(-50% - 27px));
+  transform: translateY(calc(-50% + 90px));
 }
 
 .collection__item {
@@ -567,14 +568,81 @@ template {
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #85909e;
+  color: #333D4B;
 }
 
 .collection__item-description {
+  margin: 0;
   text-align: center;
   color: #85909e;
 }
 
+@media screen and (max-width: 1280px) {
+  .collection {
+    margin-top: 144px;
+  }
+  .collection__title {
+    font-size: 96px;
+  }
+  .collection__list {
+    flex-direction: column;
+    transform: translateY(-76px);
+    padding-left: 59px;
+  }
+  .collection__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 47px;
+  }
+  .collection__item:last-child {
+    margin-bottom: 0;
+    padding-left: 27px;
+  }
+  .collection__item-content {
+    max-width: 282px;
+    margin-left: 36px;
+    padding-bottom: 24px;
+  }
+  .collection__item-title {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 32px;
+  }
+  .collection__item-description {
+    margin: 0;
+    text-align: left;
+    color: #85909e;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 689px) {
+  .collection {
+    margin-top: 120px;
+  }
+  .collection__title {
+    font-size: 40px;
+    text-align: center;
+  }
+  .collection__list {
+    flex-direction: column;
+    margin-top: 80px;
+    align-items: center;
+    padding: 0;
+  }
+  .collection__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .collection__item-title, .collection__item-description {
+    text-align: center;
+  }
+}
 .benefits {
   background-color: #2C343E;
   border-radius: 10px;
