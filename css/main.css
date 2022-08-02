@@ -363,7 +363,7 @@ template {
 
 @media only screen and (max-width: 1280px) {
   .container {
-    max-width: 718px;
+    max-width: 719px;
   }
 }
 @media screen and (max-width: 689px) {
@@ -372,18 +372,17 @@ template {
   }
 }
 .intro {
-  margin-top: 34px;
+  margin-top: 45px;
   background-image: url(../img/backgorund-coffe.jpg);
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
-  padding-top: 50px;
+  padding-top: 117px;
   padding-left: 85px;
   padding-bottom: 116px;
-  display: none;
 }
 
 .intro__content {
-  width: 520px;
+  max-width: 520px;
 }
 
 .intro__title {
@@ -392,6 +391,7 @@ template {
   font-size: 72px;
   line-height: 72px;
   color: #FEFCF7;
+  margin: 0;
 }
 
 .intro__description {
@@ -405,15 +405,40 @@ template {
   opacity: 0.8;
 }
 
-.intro__link {
-  margin-top: 56px;
+@media screen and (max-width: 1280px) {
+  .intro {
+    margin-top: 54px;
+    background-size: cover;
+    background-position: center;
+    max-width: 689px;
+    height: 500;
+    padding-top: 104px;
+    padding-left: 58px;
+    padding-bottom: 103px;
+  }
+  .intro__content {
+    max-width: 398px;
+  }
+  .intro__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .intro__description {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 24px 0 40px;
+  }
 }
-
 .site-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 44px;
+}
+
+.site-header__logo-img {
+  width: 236px;
+  height: 26px;
 }
 
 .nav__list {
@@ -448,6 +473,12 @@ template {
   height: 15px;
 }
 
+@media screen and (max-width: 1280px) {
+  .site-header__logo-img {
+    width: 235px;
+    height: 25px;
+  }
+}
 @media only screen and (max-width: 689px) {
   .site-header__nav {
     display: none;
@@ -462,7 +493,6 @@ template {
 }
 .collection {
   margin-top: 136px;
-  display: none;
 }
 
 .collection__title {
@@ -775,6 +805,8 @@ template {
 }
 
 .main-link {
+  font-family: "Fraunces";
+  font-size: 18px;
   min-width: 217px;
   display: inline-block;
   background-color: #0E8784;
