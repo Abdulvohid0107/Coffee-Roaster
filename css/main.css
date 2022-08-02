@@ -639,6 +639,9 @@ template {
     width: 100%;
     margin: 0;
   }
+  .collection__item:last-child {
+    padding-left: 0;
+  }
   .collection__item-title, .collection__item-description {
     text-align: center;
   }
