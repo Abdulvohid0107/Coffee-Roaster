@@ -45,12 +45,6 @@
     padding-top: 104px;
     padding-left: 58px;
     padding-bottom: 103px;
-    
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // bottom: 0;
-    // left: 0;
   }
 
   .intro__content{
@@ -66,5 +60,33 @@
     font-size: 15px;
     line-height: 25px;
     margin: 24px 0 40px
+  }
+}
+
+
+@media screen and (max-width:$mobile) {
+  .intro__content-wrapper{
+    position: relative;
+    // padding: 100px 24px;
+  }
+  .intro{
+    margin-top: 41px;
+    max-width: 327px;
+    padding: 100px 24px;
+    background-position: center right -280px;
+  }
+
+  .intro__content{
+    max-width: 279px;
+    text-align: center;
+  }
+
+  .intro__title{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .intro__description{
+    margin-bottom: 39px;
   }
 }
