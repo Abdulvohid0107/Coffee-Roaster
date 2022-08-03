@@ -121,7 +121,9 @@
   .benefits__list{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 70px;
+    margin-left: -15px;
   }
 
   .benefits__item{
