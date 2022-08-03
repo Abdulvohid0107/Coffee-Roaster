@@ -402,12 +402,14 @@ template {
   mix-blend-mode: normal;
   margin: 0;
   margin-top: 32px;
+  margin-bottom: 56px;
   opacity: 0.8;
 }
 
 @media screen and (max-width: 1280px) {
   .intro {
     margin-top: 54px;
+    background-image: url(../../img/intro-bg-tablet.png);
     background-size: cover;
     background-position: center;
     max-width: 689px;
@@ -429,15 +431,20 @@ template {
     margin: 24px 0 40px;
   }
 }
+@media screen and (max-width: 1280px) {
+  .intro {
+    background-image: url(../../img/intro-bg-tablet.png);
+  }
+}
 @media screen and (max-width: 689px) {
   .intro__content-wrapper {
     position: relative;
   }
   .intro {
+    background-image: url(../../img/intro-bg-mobile.png);
     margin-top: 41px;
     max-width: 327px;
     padding: 100px 24px;
-    background-position: center right -280px;
   }
   .intro__content {
     max-width: 279px;
@@ -656,7 +663,6 @@ template {
   color: #FEFCF7;
   padding-bottom: 317px;
   margin-bottom: 351px;
-  display: none;
 }
 
 .benefits__title {
@@ -675,6 +681,8 @@ template {
   margin: 0;
   text-align: center;
   margin: 0 auto;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }
 
 .benefits__list {
@@ -737,6 +745,7 @@ template {
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 900;
+  text-align: center;
   font-size: 24px;
   line-height: 32px;
   color: #FEFCF7;
@@ -752,6 +761,63 @@ template {
   text-align: center;
 }
 
+@media screen and (max-width: 1280px) {
+  .benefits {
+    margin-top: 144px;
+    padding-bottom: 368px;
+    padding-top: 56px;
+  }
+  .benefits__text {
+    width: 540px;
+    margin: 0 auto;
+  }
+  .benefits__title {
+    margin: 0 0 24px 0;
+    font-family: "Fraunces";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FEFCF7;
+    font-size: 32px;
+  }
+  .benefits__description {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .benefits__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .benefits__item {
+    margin: 0;
+    width: 573px;
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 48px 41px 70px;
+    margin-bottom: 24px;
+  }
+  .benefits__item:last-child {
+    margin-bottom: 0;
+  }
+  .benefits__item-title {
+    margin: 0;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+  .benefits__item-description {
+    text-align: left;
+    width: 344px;
+    font-style: 15px;
+    line-height: 25px;
+  }
+}
 .works {
   width: 1110px;
   display: block;

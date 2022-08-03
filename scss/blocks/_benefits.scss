@@ -2,7 +2,6 @@
   @include box;
   padding-bottom: 317px;
   margin-bottom: 351px;
-  display: none;
 }
 
 .benefits__title{
@@ -15,6 +14,8 @@
   margin: 0;
   text-align: center;
   margin: 0 auto;
+  mix-blend-mode: normal;
+  opacity: 0.8
 }
 
 .benefits__list{
@@ -56,7 +57,6 @@
   height: 72px;
   background-image: url(../../img/exclusive-benefits.svg);
   background-repeat: no-repeat;
-  // margin: 0 auto;
 }
 
 .benefits__item--shipping::before{
@@ -67,7 +67,6 @@
   background-image: url(../../img/delivery.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  // margin: 0 auto;
 }
 
 .benefits__item-title{
@@ -77,6 +76,7 @@
   margin-bottom: 24px;
   font-style: normal;
   font-weight: 900;
+  text-align: center;
   font-size: 24px;
   line-height: 32px;
   color: #FEFCF7;
@@ -90,4 +90,65 @@
   margin: 0;
   width: 255px;
   text-align: center;
+}
+
+
+@media screen and (max-width: $tablet) {
+  .benefits{
+    margin-top: 144px;
+    padding-bottom: 368px;
+    padding-top: 56px;
+  }
+  
+  .benefits__text{
+    width: 540px;
+    margin: 0 auto;
+  }
+
+  .benefits__title{
+    margin: 0 0 24px 0;
+    @include heading-2;
+    font-size: 32px;
+  }
+
+  .benefits__description{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .benefits__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .benefits__item{
+    margin: 0;
+    width: 573px;
+    border-radius: $mid-radius;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41px 48px 41px 70px;
+    margin-bottom: 24px;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .benefits__item-title{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .benefits__item-description{
+    text-align: left;
+    width: 344px;
+    font-style: 15px;
+    line-height: 25px;
+  }
 }

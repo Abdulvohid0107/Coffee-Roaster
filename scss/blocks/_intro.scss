@@ -29,6 +29,7 @@
   mix-blend-mode: normal;
   margin: 0;
   margin-top: 32px;
+  margin-bottom: 56px;
   opacity: 0.8;
 }
 
@@ -36,7 +37,7 @@
 @media screen and (max-width:$tablet) {
   .intro{
     margin-top: 54px;
-    // background-image: url(../../img/coffee-tablet.png);
+    background-image: url(../../img/intro-bg-tablet.png);
     background-size: cover;
     background-position: center;
     max-width: 689px;
@@ -63,17 +64,21 @@
   }
 }
 
+@media screen and (max-width: $tablet) {
+  .intro{
+    background-image: url(../../img/intro-bg-tablet.png);
+  }
+}
 
 @media screen and (max-width:$mobile) {
   .intro__content-wrapper{
     position: relative;
-    // padding: 100px 24px;
   }
   .intro{
+    background-image: url(../../img/intro-bg-mobile.png);
     margin-top: 41px;
     max-width: 327px;
     padding: 100px 24px;
-    background-position: center right -280px;
   }
 
   .intro__content{
