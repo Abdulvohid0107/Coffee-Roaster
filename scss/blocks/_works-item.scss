@@ -1,6 +1,6 @@
 
 .works-item{
-  width: 285px;
+  // width: 285px;
   margin-right: 95px;
 }
 
@@ -90,4 +90,31 @@
   font-size: 15px;
   line-height: 25px;
 }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .works-item{
+    width: 327px;
+    margin-right: 0;
+    margin-bottom: 56px;
+  }
+
+  .works-item__number{
+    text-align: center;
+
+    &::before{
+      display: none;
+    }
+  }
+
+  .works-item__title{
+    text-align: center;
+    margin: 24px 0 24px;
+  }
+
+  .works-item__description{
+    // width: 327px;
+    text-align: center;
+  }
 }

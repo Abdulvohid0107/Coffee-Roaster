@@ -10,24 +10,7 @@
   height: 26px;
 }
 
-.nav__list{
-  @include reset-list;
-  display: flex;
-}
 
-.nav__list-item{
-  color: $kul-rang;
-  margin-right: 33px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  letter-spacing: 0.923077px;
-  text-transform: uppercase;
-}
-
-.nav__list-item:last-child{
-  margin-right: 0;
-}
 
 
 .site-header__button{

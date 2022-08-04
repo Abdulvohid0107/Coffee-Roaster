@@ -11,6 +11,7 @@
   font-size: 24px;
   line-height: 32px;
   color: #83888F;
+  margin: 0;
   margin-bottom: 80px;
 }
 
@@ -18,13 +19,13 @@
   @include reset-list;
   display: flex;
   width: 1045px;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: relative;
 }
 
 .works__list::before{
   position: absolute;
-  right: 285px;
+  right: 260px;
   top: 15px;
   content: '';
   display: block;
@@ -58,5 +59,32 @@
 
   .works__link-wrapper{
     margin: 44px 0 144px;
+  }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .works{
+    width: 327px;
+  }
+
+  .works__title{
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .works__list{
+    width: 327px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works__list::before{
+    display: none;
+  }
+
+  .works__link-wrapper{
+    margin: 79px 0 120px;  
+    text-align: center;  
   }
 }

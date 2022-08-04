@@ -4,7 +4,8 @@
   padding-bottom: 47px;
   padding-left: 85px;
   padding-right: 85px;
-  display: none;
+
+  margin-bottom: 100px;
 }
 
 .footer__container{
@@ -31,4 +32,35 @@
 
 .footer__media-link:last-child{
   margin-right: 0;
+}
+
+
+@media screen and (max-width: $tablet) {
+  .footer{
+    padding: 54px 190px 54px 215px;
+  }
+
+  .footer__container{
+    flex-direction: column;
+    align-items: center ;
+  }
+
+  .footer__nav-media-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__nav{
+    margin-top: 33px;
+    margin-bottom: 65px;
+  }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .footer{
+    padding: 55px;
+  }
 }
