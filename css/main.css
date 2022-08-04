@@ -1076,7 +1076,6 @@ template {
   padding-bottom: 47px;
   padding-left: 85px;
   padding-right: 85px;
-  margin-bottom: 100px;
 }
 
 .footer__container {
@@ -1116,6 +1115,7 @@ template {
     align-items: center;
   }
   .footer__nav-media-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
