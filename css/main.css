@@ -663,6 +663,7 @@ template {
   color: #FEFCF7;
   padding-bottom: 317px;
   margin-bottom: 351px;
+  display: none;
 }
 
 .benefits__title {
@@ -820,11 +821,57 @@ template {
     line-height: 25px;
   }
 }
+@media screen and (max-width: 689px) {
+  .benefits {
+    margin-top: 120px;
+    padding: 0 24px;
+    padding-bottom: 661px;
+    padding-top: 64px;
+  }
+  .benefits__text {
+    width: 279px;
+    margin: 0 auto;
+  }
+  .benefits__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .benefits__description {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 279px;
+  }
+  .benefits__list {
+    margin: 0;
+    margin-top: 64px;
+    margin-left: 13px;
+  }
+  .benefits__item {
+    width: 279px;
+    flex-direction: column;
+    align-items: center;
+    padding: 71px 12px 48px;
+  }
+  .benefits__item-title {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 24px;
+    width: 255px;
+  }
+  .benefits__item-description {
+    text-align: center;
+    width: 212px;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+  }
+}
 .works {
   width: 1110px;
   display: block;
   margin: 0 auto;
-  display: none;
 }
 
 .works__title {
@@ -862,10 +909,27 @@ template {
   margin: 64px 0 200px;
 }
 
+@media screen and (max-width: 1280px) {
+  .works {
+    width: 689px;
+  }
+  .works__title {
+    margin-bottom: 40px;
+  }
+  .works__list {
+    width: 689px;
+  }
+  .works__list::before {
+    width: 467px;
+    left: 30px;
+  }
+  .works__link-wrapper {
+    margin: 44px 0 144px;
+  }
+}
 .works-item {
   width: 285px;
   margin-right: 95px;
-  display: none;
 }
 
 .works-item:last-child {
@@ -879,11 +943,6 @@ template {
   font-size: 72px;
   line-height: 72px;
   color: #FDD6BA;
-}
-
-.works-item {
-  width: 285px;
-  margin-right: 95px;
 }
 
 .works-item:last-child {
@@ -933,6 +992,30 @@ template {
   margin: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .works-item {
+    max-width: 223px;
+    margin-right: 10px;
+  }
+  .works-item__title {
+    -moz-columns: #85909e;
+         columns: #85909e;
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0;
+    margin: 42px 0 38px;
+  }
+  .works-item__title--coffee {
+    width: 100%;
+  }
+  .works-item__description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
 .footer {
   background: #2C343E;
   padding-top: 47px;

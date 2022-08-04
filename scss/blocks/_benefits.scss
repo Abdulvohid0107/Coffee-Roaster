@@ -2,6 +2,7 @@
   @include box;
   padding-bottom: 317px;
   margin-bottom: 351px;
+  display: none;
 }
 
 .benefits__title{
@@ -152,5 +153,61 @@
     width: 344px;
     font-style: 15px;
     line-height: 25px;
+  }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .benefits{
+    margin-top: 120px;
+    padding: 0 24px;
+    padding-bottom: 661px;
+    padding-top: 64px;
+  }
+
+  .benefits__text{
+    width: 279px;
+    margin: 0 auto;
+  }
+
+  .benefits__title{
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .benefits__description{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 279px;
+  }
+
+  .benefits__list{
+    margin: 0;
+    margin-top: 64px;
+    margin-left: 13px;
+  }
+
+  .benefits__item{
+    width: 279px;
+    flex-direction: column;
+    align-items: center;
+    padding: 71px 12px 48px;
+  }
+
+  .benefits__item-title{
+    margin: 0;
+    text-align: center;
+    margin-bottom: 24px;
+    width: 255px;
+  }
+
+  .benefits__item-description{
+    text-align: center;
+    width: 212px;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
   }
 }

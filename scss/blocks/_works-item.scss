@@ -2,7 +2,6 @@
 .works-item{
   width: 285px;
   margin-right: 95px;
-  display: none;
 }
 
 .works-item:last-child{
@@ -16,12 +15,6 @@
   font-size: 72px;
   line-height: 72px;
   color: #FDD6BA;
-}
-
-  
-.works-item{
-  width: 285px;
-  margin-right: 95px;
 }
 
 .works-item:last-child{
@@ -68,4 +61,33 @@
 
 .works-item__description{
   margin: 0;
+}
+
+
+@media screen and (max-width: $tablet) {
+  
+.works-item{
+  max-width: 223px;
+  margin-right: 10px;
+}
+
+.works-item__title{
+  columns: $dark;
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0;
+  margin: 42px 0 38px;
+}
+
+.works-item__title--coffee{
+  width: 100%;
+}
+
+.works-item__description{
+  font-size: 15px;
+  line-height: 25px;
+}
 }

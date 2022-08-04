@@ -2,7 +2,6 @@
   width: 1110px;
   display: block;
   margin: 0 auto;
-  display: none;
 }
 
 .works__title{
@@ -36,4 +35,28 @@
 
 .works__link-wrapper{
   margin: 64px 0 200px;
+}
+
+
+@media screen and (max-width: $tablet) {
+  .works{
+    width: 689px;
+  }
+
+  .works__title{
+    margin-bottom: 40px;
+  }
+
+  .works__list{
+    width: 689px;
+  }
+
+  .works__list::before{
+    width: 467px;
+    left: 30px;
+  }
+
+  .works__link-wrapper{
+    margin: 44px 0 144px;
+  }
 }
