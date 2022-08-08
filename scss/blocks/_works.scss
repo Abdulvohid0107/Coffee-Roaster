@@ -2,6 +2,7 @@
   width: 1110px;
   display: block;
   margin: 0 auto;
+  margin-top: 200px;
 }
 
 .works__title{
@@ -77,6 +78,7 @@
     width: 327px;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   }
 
   .works__list::before{

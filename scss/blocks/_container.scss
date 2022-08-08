@@ -4,13 +4,13 @@
   padding: 0 15px;
 }
 
-@media only screen and (max-width: $tablet){
+@media only screen and (max-width: $tablet) {
   .container{
     max-width: 719px;
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media only screen and (max-width: $mobile) {
   .container{
     max-width: 357px;
   }

@@ -95,7 +95,7 @@
 
 @media screen and (max-width: $mobile) {
   .works-item{
-    width: 327px;
+    max-width: 327px;
     margin-right: 0;
     margin-bottom: 56px;
   }
@@ -114,7 +114,7 @@
   }
 
   .works-item__description{
-    // width: 327px;
+    max-width: 327px;
     text-align: center;
   }
 }
