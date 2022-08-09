@@ -422,7 +422,6 @@ template {
   }
 }
 .intro {
-  margin-top: 45px;
   background-image: url(../img/backgorund-coffe.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -458,7 +457,6 @@ template {
 
 @media screen and (max-width: 1280px) {
   .intro {
-    margin-top: 54px;
     background-image: url(../../img/intro-bg-tablet.png);
     background-size: cover;
     background-position: center;
@@ -492,7 +490,6 @@ template {
   }
   .intro {
     background-image: url(../../img/intro-bg-mobile.png);
-    margin-top: 41px;
     max-width: 327px;
     padding: 100px 24px;
   }
@@ -931,11 +928,48 @@ template {
     height: 39px;
   }
 }
+@media only screen and (max-width: 689px) {
+  .benefits {
+    margin-top: 0px;
+    padding: 64px 24px 661px 24px;
+  }
+  .benefits::before {
+    height: 902px;
+  }
+  .benefits__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .benefits__list {
+    margin-top: 64px;
+  }
+  .benefits__list-item {
+    width: 100%;
+    padding: 72px 35px 51px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .benefits__list-item-wrapper {
+    width: 100%;
+  }
+  .benefits__list-title {
+    margin: 0;
+    margin-top: 56px;
+    margin-bottom: 24px;
+  }
+  .benefits__list-item--quality::before,
+.benefits__list-item--benefits::before,
+.benefits__list-item--shipping::before {
+    margin: 0;
+  }
+}
 .works {
   width: 1110px;
   display: block;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 434px;
 }
 
 .works__title {
@@ -994,7 +1028,8 @@ template {
 }
 @media screen and (max-width: 689px) {
   .works {
-    width: 327px;
+    width: 100%;
+    margin-top: 900px;
   }
   .works__title {
     margin-bottom: 80px;
@@ -1135,6 +1170,8 @@ template {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1110px;
+  margin-left: auto;
 }
 
 .footer__nav-media-wrapper {
@@ -1164,8 +1201,17 @@ template {
     padding: 54px 190px 54px 215px;
   }
   .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1110px;
+    margin-left: auto;
+  }
+  .footer__container {
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    margin: 0;
   }
   .footer__nav-media-wrapper {
     width: 100%;

@@ -1,5 +1,4 @@
 .intro{
-  margin-top: 45px;
   background-image: url(../img/backgorund-coffe.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -36,7 +35,6 @@
 
 @media screen and (max-width:$tablet) {
   .intro{
-    margin-top: 54px;
     background-image: url(../../img/intro-bg-tablet.png);
     background-size: cover;
     background-position: center;
@@ -76,7 +74,6 @@
   }
   .intro{
     background-image: url(../../img/intro-bg-mobile.png);
-    margin-top: 41px;
     max-width: 327px;
     padding: 100px 24px;
   }
