@@ -17,6 +17,11 @@
   margin-right: 0;
 }
 
+.nav__link{
+  text-decoration: none;
+  color: #83888F;
+}
+
 @media screen and (max-width: $mobile) {
   .nav__list{
     flex-direction: column;

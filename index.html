@@ -19,11 +19,11 @@
                 <span class="visually-hidden">Menu toggler button</span>
             </button>
 
-            <nav class="nav site-header__nav site-header__nav--opened">
+            <nav class="nav site-header__nav">
                 <ul class="nav__list">
-                    <li class="nav__list-item">Home</li>
-                    <li class="nav__list-item">About us</li>
-                    <li class="nav__list-item">Create your plan</li>
+                    <li class="nav__list-item"><a href="#" class="nav__link site-header__nav-link">Home</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__link site-header__nav-link">About us</a></li>
+                    <li class="nav__list-item"><a href="#" class="nav__link site-header__nav-link">Create your plan</a></li>
                 </ul>
             </nav>
         </div>
@@ -199,7 +199,15 @@
             </div>
         </footer>
         <!-- // FOOTER -->
-        
+        <script>
+            const elToggler = document.querySelector(".site-header__burger")
+            const elHeader = document.querySelector(".site-header");
+
+            elToggler.addEventListener("click", function () {
+                elHeader.classList.toggle("site-header__nav--opened");
+                elToggler.classList.toggle("site-header__burger--opened")
+            })
+        </script>
     </main>
 </body>
 </html>

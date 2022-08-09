@@ -403,6 +403,11 @@ template {
   margin-right: 0;
 }
 
+.nav__link {
+  text-decoration: none;
+  color: #83888F;
+}
+
 @media screen and (max-width: 689px) {
   .nav__list {
     flex-direction: column;
@@ -511,6 +516,10 @@ template {
   padding-bottom: 32px;
 }
 
+.site-header__logo {
+  z-index: 1;
+}
+
 .site-header__logo-img {
   width: 236px;
   height: 26px;
@@ -518,6 +527,7 @@ template {
 
 .site-header__burger {
   display: none;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1280px) {
@@ -527,6 +537,16 @@ template {
   }
 }
 @media only screen and (max-width: 689px) {
+  @-webkit-keyframes nav-open {
+    0% {
+      transform: translateY(-100%);
+    }
+  }
+  @keyframes nav-open {
+    0% {
+      transform: translateY(-100%);
+    }
+  }
   .site-header {
     position: relative;
   }
@@ -548,23 +568,58 @@ template {
     height: 18px;
   }
   .site-header__burger {
+    cursor: pointer;
+    min-height: 15px;
+    width: 20px;
     display: block;
     border: none;
     background-color: transparent;
     padding: 0;
+    position: relative;
   }
-  .site-header__burger span,
+  .site-header__burger-inner,
 .site-header__burger::after,
 .site-header__burger::before {
     display: block;
-    width: 16px;
+    width: 20px;
     height: 3px;
     background-color: #333D4B;
     content: "";
     border-radius: 1.5px;
+    transition: 0.5s ease all;
   }
   .site-header__burger-inner {
     margin: 3px 0;
+  }
+  .site-header__burger--opened .site-header__burger-inner {
+    display: none;
+  }
+  .site-header__burger--opened::before,
+.site-header__burger--opened::after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  .site-header__burger--opened::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .site-header__burger--opened::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .site-header__nav--opened {
+    background-color: #FEFCF7;
+  }
+  .site-header__nav--opened .site-header__nav {
+    display: block;
+    -webkit-animation: 0.3s ease nav-open;
+            animation: 0.3s ease nav-open;
+  }
+  .site-header__nav-link {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
   }
   .site-header__nav--opened {
     display: block;
