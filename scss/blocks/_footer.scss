@@ -34,6 +34,9 @@
   margin-right: 0;
 }
 
+.footer__media-link-hover:hover{
+  fill: #FDD6BA;
+}
 
 @media screen and (max-width: $tablet) {
   .footer{

@@ -21,6 +21,11 @@
   z-index: 1;
 }
 
+.site-header__nav-link:hover{
+  transition: 0.5s ease all;
+  color: #333D4B;
+}
+
 // RESPONSIVE
 @media screen and (max-width: $tablet) {
   .site-header__logo-img{

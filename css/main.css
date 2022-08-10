@@ -527,6 +527,11 @@ template {
   z-index: 1;
 }
 
+.site-header__nav-link:hover {
+  transition: 0.5s ease all;
+  color: #333D4B;
+}
+
 @media screen and (max-width: 1280px) {
   .site-header__logo-img {
     width: 235px;
@@ -1196,6 +1201,10 @@ template {
   margin-right: 0;
 }
 
+.footer__media-link-hover:hover {
+  fill: #FDD6BA;
+}
+
 @media screen and (max-width: 1280px) {
   .footer {
     padding: 54px 190px 54px 215px;
@@ -1242,4 +1251,9 @@ template {
   text-decoration: none;
   font-weight: 700;
   text-align: center;
+  transition: 0.5s ease all;
+}
+.main-link:hover {
+  background: #66D2CF;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
