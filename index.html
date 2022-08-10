@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header class="container site-header">
+    <div class="container">
+       <header class="site-header">
         <div class="site-header__container">
             <a href="#" class="site-header__logo">
                 <img src="img/site-logo-black.svg" alt="Site logo" class="site-header__logo-img">
@@ -27,7 +28,9 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> 
+    </div>
+    
 
     <main>
 
@@ -45,7 +48,8 @@
 
 
         <!-- COLLECTION -->
-        <section class="container collection">
+        <div class="container">
+            <section class="collection">
                 <h2 class="collection__title">Our Collection</h2>
                 <ul class="collection__list">
                     <li class="collection__item">
@@ -80,6 +84,8 @@
                 </ul>
         </section>
         <!-- // COLLECTION -->
+        </div>
+        
 
 
         <!-- BENEFITS -->        
@@ -151,7 +157,8 @@
 
 
         <!-- WORKS -->
-        <section class="works container">
+        <div class="container">
+            <section class="works">
             <h2 class="works__title">How it works</h2>
             <ol class="works__list">
                 <li class="works__list-item works-item">
@@ -174,11 +181,14 @@
                 <a href="#" class="works-link main-link intro-link">Create your plan</a>
             </div>
         </section>
+        </div>
+        
         <!-- // WORKS -->
 
 
         <!-- FOOTER -->
-        <footer class="container footer">
+        <div class="container">
+            <footer class="footer">
             <div class="footer__container">
                 <a href="" class="footer__logo">
                     <img src="img/site-logo-white.svg" alt="Site logo" class="footer__logo-img">
@@ -217,6 +227,8 @@
                 </div>
             </div>
         </footer>
+        </div>
+        
         <!-- // FOOTER -->
         <script>
             const elToggler = document.querySelector(".site-header__burger")
