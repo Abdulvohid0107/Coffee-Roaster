@@ -1336,7 +1336,7 @@ template {
 }
 @media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 2dppx) and (min-width: 320px) {
   .about-us {
-    background: url(‘../../img/intro-about-mobile@2x.jpg’) no-repeat;
+    background: url(../../img/intro-about-mobile@2x.jpg) no-repeat;
     background-size: cover;
   }
 }
