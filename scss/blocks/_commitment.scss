@@ -1,0 +1,39 @@
+.commitment{
+  margin-top: 168px;
+  padding: 0 85px;
+}
+
+.commitment__content-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commitment__content{
+  width: 540px;
+  margin-left: 125px;
+}
+
+.commitment__content-wrapper::before{
+  content: '';
+  display: block;
+  width: 445px;
+  height: 520px;
+  background-image: url(../../img/commitment-desctop.jpg);
+}
+
+.commitment__title{
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.commmitment__description{
+  margin: 0;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}

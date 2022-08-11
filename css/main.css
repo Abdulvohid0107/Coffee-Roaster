@@ -378,7 +378,7 @@ template {
     max-width: 719px;
   }
 }
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 719px) {
   .container {
     max-width: 357px;
   }
@@ -409,7 +409,7 @@ template {
   color: #83888F;
 }
 
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .nav__list {
     flex-direction: column;
     align-items: center;
@@ -485,7 +485,7 @@ template {
     background-image: url(../../img/intro-bg-tablet.png);
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .intro__content-wrapper {
     position: relative;
   }
@@ -539,7 +539,7 @@ template {
     height: 25px;
   }
 }
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 719px) {
   @-webkit-keyframes nav-open {
     0% {
       transform: translateY(-100%);
@@ -735,7 +735,7 @@ template {
     line-height: 25px;
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .collection {
     margin-top: 120px;
   }
@@ -934,7 +934,7 @@ template {
     height: 39px;
   }
 }
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 719px) {
   .benefits {
     margin-top: 0px;
     padding: 64px 24px 661px 24px;
@@ -1032,7 +1032,7 @@ template {
     margin: 44px 0 144px;
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .works {
     width: 100%;
     margin-top: 900px;
@@ -1143,7 +1143,7 @@ template {
     line-height: 25px;
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .works-item {
     max-width: 327px;
     margin-right: 0;
@@ -1242,7 +1242,7 @@ template {
     margin-bottom: 65px;
   }
 }
-@media screen and (max-width: 689px) {
+@media screen and (max-width: 719px) {
   .footer {
     padding: 55px;
   }
@@ -1326,7 +1326,7 @@ template {
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 689px) {
+@media only screen and (max-width: 719px) {
   .about-us {
     background: url(../../img/intro-about-mobile.jpg) no-repeat;
     border-radius: 10px;
@@ -1344,4 +1344,43 @@ template {
     mix-blend-mode: normal;
     opacity: 0.8;
   }
+}
+.commitment {
+  margin-top: 168px;
+  padding: 0 85px;
+}
+
+.commitment__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.commitment__content {
+  width: 540px;
+  margin-left: 125px;
+}
+
+.commitment__content-wrapper::before {
+  content: "";
+  display: block;
+  width: 445px;
+  height: 520px;
+  background-image: url(../../img/commitment-desctop.jpg);
+}
+
+.commitment__title {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 32px;
+}
+
+.commmitment__description {
+  margin: 0;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */
