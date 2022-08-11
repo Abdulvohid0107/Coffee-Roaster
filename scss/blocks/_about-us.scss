@@ -1,5 +1,6 @@
 .about-us{
   background: url(../../img/intro-bg.jpg) no-repeat;
+  border-radius: 10px;
 }
 
 @media
@@ -16,7 +17,13 @@ only screen and (min-resolution: 2dppx) and (min-width: 320px){
   }
 }
 
+.about-us__content{
+  width: 100%;
+  padding: 137px 750px 137px 85px;
+}
+
 .about-us__title{
+  margin: 0;
   font-family: "Fraunces", serif !important;
   font-weight: 900;
   font-size: 40px;
@@ -27,5 +34,41 @@ only screen and (min-resolution: 2dppx) and (min-width: 320px){
 }
 
 .about-us__description{
+  margin: 0;
   color: #FEFCF7;
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .about-us{
+    background: url("../../img/intro-about-tablet.jpg") no-repeat;
+  }
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+  .about-us{
+      background: url("../../img/intro-about-tablet@2x.jpg") no-repeat;
+    }
+  }
+
+  .about-us__content{
+    width: 100%;
+    padding: 118px 233px 118px 58px;
+  }
+
+  .about-us__title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about-us__description{
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
