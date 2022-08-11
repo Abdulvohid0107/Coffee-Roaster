@@ -1331,27 +1331,15 @@ template {
     background: url(../../img/intro-about-mobile.jpg) no-repeat;
     border-radius: 10px;
   }
-}
-@media only screen and (max-width: 689px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 689px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 689px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 689px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 689px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 689px) and (min-resolution: 2dppx) and (min-width: 320px) {
-  .about-us {
-    background: url(‘../../img/intro-about-mobile.jpg’) no-repeat;
-    background-size: cover;
-  }
-}
-@media only screen and (max-width: 689px) {
   .about-us__content {
     width: 100%;
     padding: 111px 24px 87px;
     text-align: center;
   }
-}
-@media only screen and (max-width: 689px) {
   .about-us__title {
     font-size: 28px;
     line-height: 28px;
   }
-}
-@media only screen and (max-width: 689px) {
   .about-us__description {
     mix-blend-mode: normal;
     opacity: 0.8;
