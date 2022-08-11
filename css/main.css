@@ -882,7 +882,7 @@ template {
 
 @media only screen and (max-width: 1280px) {
   .benefits {
-    padding: 56px 74px 368px 74px;
+    padding: 56px 57px 368px 58px;
     height: 573px;
   }
   .benefits__wrapper {
@@ -903,7 +903,7 @@ template {
     width: 100%;
     padding: 41px 48px 41px 70px;
     text-align: left;
-    margin-top: 24px;
+    margin-bottom: 24px;
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -1268,6 +1268,7 @@ template {
 
 .about-us {
   background: url(../../img/intro-bg.jpg) no-repeat;
+  background-size: cover;
   border-radius: 10px;
 }
 
@@ -1329,17 +1330,30 @@ template {
 @media only screen and (max-width: 719px) {
   .about-us {
     background: url(../../img/intro-about-mobile.jpg) no-repeat;
+    background-size: cover;
     border-radius: 10px;
   }
+}
+@media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .about-us {
+    background: url(‘../../img/intro-about-mobile@2x.jpg’) no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 719px) {
   .about-us__content {
     width: 100%;
     padding: 111px 24px 87px;
     text-align: center;
   }
+}
+@media only screen and (max-width: 719px) {
   .about-us__title {
     font-size: 28px;
     line-height: 28px;
   }
+}
+@media only screen and (max-width: 719px) {
   .about-us__description {
     mix-blend-mode: normal;
     opacity: 0.8;
