@@ -36,12 +36,18 @@
 
 .footer__media-link-hover:hover{
   fill: #FDD6BA;
+  transition: 0.5s ease all;
+}
+
+.footer__nav-item:hover{
+  transition: 0.5s ease all;
+  cursor: pointer;
+  color: #FEFCF7;
 }
 
 @media screen and (max-width: $tablet) {
   .footer{
     padding: 54px 175px 54px 200px;
-
   }
 
   .footer__container{

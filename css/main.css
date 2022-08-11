@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -374,12 +375,12 @@ template {
 
 @media only screen and (max-width: 1280px) {
   .container {
-    max-width: 719px;
+    max-width: 1280px;
   }
 }
 @media only screen and (max-width: 689px) {
   .container {
-    max-width: 357px;
+    max-width: 719px;
   }
 }
 .nav__list {
@@ -1203,6 +1204,13 @@ template {
 
 .footer__media-link-hover:hover {
   fill: #FDD6BA;
+  transition: 0.5s ease all;
+}
+
+.footer__nav-item:hover {
+  transition: 0.5s ease all;
+  cursor: pointer;
+  color: #FEFCF7;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1256,4 +1264,28 @@ template {
 .main-link:hover {
   background: #66D2CF;
   cursor: pointer;
+}
+
+.about-us {
+  background: url(../../img/intro-bg.jpg) no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .about-us {
+    background: url(‘../../img/intro-bg@2x.jpg’) no-repeat;
+    background-size: cover;
+  }
+}
+.about-us__title {
+  font-family: "Fraunces", serif !important;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.about-us__description {
+  color: #FEFCF7;
 }/*# sourceMappingURL=main.css.map */

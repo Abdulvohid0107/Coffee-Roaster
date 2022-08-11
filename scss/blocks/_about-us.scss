@@ -1,0 +1,31 @@
+.about-us{
+  background: url(../../img/intro-bg.jpg) no-repeat;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+only screen and (min-resolution: 192dpi) and (min-width: 320px),
+only screen and (min-resolution: 2dppx) and (min-width: 320px){
+.about-us{
+    background: url(‘../../img/intro-bg@2x.jpg’) no-repeat;
+    background-size: cover;
+  }
+}
+
+.about-us__title{
+  font-family: "Fraunces", serif !important;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FEFCF7;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.about-us__description{
+  color: #FEFCF7;
+}
