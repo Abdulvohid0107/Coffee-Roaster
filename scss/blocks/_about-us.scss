@@ -72,3 +72,41 @@ only screen and (min-resolution: 2dppx) and (min-width: 320px){
     line-height: 25px;
   }
 }
+
+
+@media only screen and (max-width: $mobile) {
+  .about-us{
+    background: url(../../img/intro-about-mobile.jpg) no-repeat;
+    border-radius: 10px;
+  }
+  
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+  .about-us{
+      background: url(‘../../img/intro-about-mobile@2x.jpg’) no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .about-us__content{
+    width: 100%;
+    padding: 111px 24px 87px;
+    text-align: center;
+  }
+
+  .about-us__title{
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .about-us__description{
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
