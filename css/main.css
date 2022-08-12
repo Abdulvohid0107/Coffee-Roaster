@@ -1207,7 +1207,7 @@ template {
   transition: 0.5s ease all;
 }
 
-.footer__nav-item:hover {
+.footer__nav-item-link:hover {
   transition: 0.5s ease all;
   cursor: pointer;
   color: #FEFCF7;
@@ -1274,7 +1274,7 @@ template {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .about-us {
-    background: url(‘../../img/intro-bg@2x.jpg’) no-repeat;
+    background: url(../../img/intro-bg@2x.jpg) no-repeat;
     background-size: cover;
   }
 }
@@ -1302,11 +1302,13 @@ template {
 @media only screen and (max-width: 1280px) {
   .about-us {
     background: url("../../img/intro-about-tablet.jpg") no-repeat;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 2dppx) and (min-width: 320px) {
   .about-us {
-    background: url("../../img/intro-about-tablet.jpg") no-repeat;
+    background: url("../../img/intro-about-tablet@2x.jpg") no-repeat;
+    background-size: cover;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -1371,7 +1373,7 @@ template {
 }
 
 .commitment__content {
-  width: 540px;
+  max-width: 540px;
   margin-left: 125px;
 }
 
@@ -1397,4 +1399,76 @@ template {
   margin: 0;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+
+@media only screen and (max-width: 1280px) {
+  .commitment {
+    margin-top: 144px;
+    padding: 0;
+  }
+  .commitment__content {
+    max-width: 339px;
+    margin-left: 69px;
+  }
+  .commitment__content-wrapper::before {
+    content: "";
+    display: block;
+    width: 281px;
+    height: 470px;
+    background-image: url(../../img/commitment-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .commitment__content-wrapper::before {
+    background: url("../../img/commitment-tablet@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .commitment__title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .commmitment__description {
+    margin: 0;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .commitment {
+    margin-top: 120px;
+  }
+  .commitment__content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .commitment__content-wrapper::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-image: url(../../img/commitment-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .commitment__content-wrapper::before {
+    background: url("../../img/commitment-mobile@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .commitment__content {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
