@@ -1,0 +1,191 @@
+.quality{
+  position: relative;
+  padding-top: 88px;
+  padding-left: 85px;
+
+  &::before{
+    background: #2C343E;
+    content: '';
+    width: 100%;
+    height: 474px;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute;
+    border-radius: 10px
+  }
+}
+  .quality__content-wrapper{
+    display: flex;
+    // position: relative;
+    z-index: 1;
+
+    &::after{
+      content: '';
+      display: block;
+      width: 445px;
+      background: #0E8784;
+      background: url("../../img/quality-img-desctop.jpg");
+      height: 474px;
+      right: 0;
+      top: 0;
+      transform: translate(-85px, -88px);
+      position: absolute;
+      border-radius: 8px;
+    }
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .quality__content-wrapper::after{
+      background: url("../../img/quality-img-desctop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .quality__content{
+    position: relative;
+    z-index: 1;
+    color: #FEFCF7;
+    max-width: 540px;
+  }
+
+  .quality__title{
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+  }
+
+  .quality__description{
+    margin: 0;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+
+
+
+@media only screen and (max-width: $tablet) {
+  .quality{
+    position: relative;
+    padding: 0;
+    padding-top: 224px;  
+    padding-bottom: 67px;
+
+    &::before{
+      background: #2C343E;
+      content: '';
+      width: 100%;
+      height: 488px;
+      top: 0;
+      left: 0;
+      display: block;
+      position: absolute;
+    }
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .quality__content-wrapper::after{
+      background: url("../../img/quality-tablet@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .quality__content-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after{
+      content: '';
+      display: block;
+      width: 573px;
+      background: #0E8784;
+      background: url("../../img/quality-tablet.jpg") no-repeat;
+      height: 320px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      transform: translateY(-50%);
+      position: absolute;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+  }
+
+  .quality__content{
+    position: relative;
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .quality{
+    padding: 142px 24px 61px;
+
+    &::before{
+      height: 509px;
+    }
+  }
+
+  .quality__content-wrapper::after{
+      max-width: 279px;
+      height: 156px;
+      background: url("../../img/quality-mobile.jpg") no-repeat;
+      border-radius: 10px;
+      transform: translateY(-50%);
+    
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .quality__content-wrapper::after{
+      background: url("../../img/quality-mobile@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+  .quality__content{
+    position: relative;
+    max-width: 279px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .quality__title{
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .quality__description{
+    font-size: 15px;
+    line-height: 25px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+}
