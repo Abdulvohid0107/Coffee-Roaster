@@ -1635,4 +1635,120 @@ template {
     mix-blend-mode: normal;
     opacity: 0.8;
   }
+}
+.headquarter {
+  margin-top: 344px;
+  margin-bottom: 168px;
+}
+
+.headquarter__content {
+  padding-left: 85px;
+}
+
+.headquarter__title {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+  margin: 0;
+}
+
+.headquarter__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-top: 72px;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1280px) {
+  .headquarter {
+    margin-top: 144px;
+    margin-bottom: 144px;
+  }
+  .headquarter__content {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .headquarter {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  .headquarter__title {
+    text-align: center;
+  }
+  .headquarter__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.headquarter-item {
+  width: 285px;
+  margin-left: 95px;
+}
+.headquarter-item:nth-child(1) {
+  margin-left: 0;
+}
+
+.headquarter-item__img {
+  margin-bottom: 45px;
+}
+
+.headquarter__item-title {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.headquarter-item__description {
+  margin: 0;
+}
+
+.header-item__description-info {
+  display: block;
+}
+
+@media only screen and (max-width: 1280px) {
+  .headquarter-item {
+    width: 223px;
+    margin-left: 10px;
+  }
+  .headquarter-item__img {
+    margin-bottom: 49px;
+  }
+  .headquarter__item-title {
+    font-size: 24px;
+    margin-bottom: 21px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .headquarter-item {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  .headquarter-item:last-child {
+    margin: 0;
+  }
+  .headquarter-item__img {
+    margin-bottom: 47px;
+  }
+  .headquarter__item-title {
+    font-size: 28px;
+    margin-bottom: 22px;
+  }
+  .headquarter-item__description {
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
