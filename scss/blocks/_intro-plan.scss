@@ -1,0 +1,123 @@
+.intro-plan{
+  background: #A2A2A2;
+  background-image: url(../../img/plan-intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 134px 0 134px 85px;
+  transition: 0.9s ease all;
+  border-radius: 10px;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .intro-plan{
+      background: url("../../img/plan-intro@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+.intro-plan__content{
+  max-width: 445px;
+  color: #FEFCF7;
+}
+
+.intro-plan__title{
+  margin: 0;
+  font-family: 'Fraunces', serif !important;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.intro-plan__description{
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin: 0;
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .intro-plan{
+    background-image: url(../../img/plan-intro-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 127px 0 126px 58px;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro-plan{
+        background: url("../../img/plan-intro-tablet@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .intro-plan__content{
+      max-width: 398px;
+    }
+
+    .intro-plan__title{
+      font-size: 48px;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .intro-plan{
+    background-image: url(../../img/plan-intro-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 101px 24px 136px;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro-plan{
+        background: url("../../img/plan-intro-mobile@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+
+    .intro-plan__content{
+      max-width: 279px;
+      text-align: center;
+    }
+
+    .intro-plan__title{
+      font-size: 40px;
+      line-height: 40px;
+      margin-bottom: 22px;
+      // text-align: center;
+    }
+
+    .intro-plan__description{
+      font-size: 15px;
+      line-height: 25px;
+    }
+    
+}
+
+

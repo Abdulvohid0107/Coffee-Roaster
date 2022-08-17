@@ -41,7 +41,8 @@
   
 }
 
-.collection__item:last-child{
+.collection__item:last-child,
+.collection__item:nth-child(4n){
   margin-right: 0;
 }
 

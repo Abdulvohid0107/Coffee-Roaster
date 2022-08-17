@@ -406,7 +406,7 @@ template {
 
 .nav__link {
   text-decoration: none;
-  color: #83888F;
+  color: inherit;
 }
 
 @media screen and (max-width: 719px) {
@@ -672,7 +672,8 @@ template {
   margin-right: 30px;
 }
 
-.collection__item:last-child {
+.collection__item:last-child,
+.collection__item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -1055,8 +1056,75 @@ template {
     text-align: center;
   }
 }
+.works-dark {
+  background-color: #2C343E;
+  margin-top: 168px;
+  border-radius: 10px;
+  padding-top: 100px;
+  padding-left: 85px;
+  padding-bottom: 100px;
+}
+
+.works-dark__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+.works-dark__list::before {
+  position: absolute;
+  right: 420px;
+  top: 15px;
+  content: "";
+  display: block;
+  width: 760px;
+  height: 1px;
+  background-color: #FDD6BA;
+}
+
+@media only screen and (max-width: 1280px) {
+  .works-dark__wrapper {
+    background-color: #2C343E;
+  }
+  .works-dark {
+    margin-top: 144px;
+    padding: 97px 0;
+  }
+  .works-dark__list::before {
+    position: absolute;
+    right: 206px;
+    top: 15px;
+    content: "";
+    display: block;
+    width: 467px;
+    height: 1px;
+    background-color: #FDD6BA;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .works-dark {
+    margin-top: 120px;
+    padding: 80px 0;
+  }
+  .works-dark__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .works-dark__list::before {
+    display: none;
+  }
+}
 .works-item {
   margin-right: 95px;
+}
+
+.works-item__dark {
+  max-width: 285px;
 }
 
 .works-item:last-child {
@@ -1070,10 +1138,6 @@ template {
   font-size: 72px;
   line-height: 72px;
   color: #FDD6BA;
-}
-
-.works-item:last-child {
-  margin-right: 0;
 }
 
 .works-item__number {
@@ -1099,6 +1163,19 @@ template {
   z-index: 1;
 }
 
+.works-item__number-dark::before {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 31px;
+  background: transparent;
+  border: 2px solid #0E8784;
+  border-radius: 50%;
+  margin-bottom: 67px;
+  position: relative;
+  z-index: 1;
+}
+
 .works-item__title {
   -moz-columns: #85909e;
        columns: #85909e;
@@ -1111,12 +1188,20 @@ template {
   margin: 38px 0 42px;
 }
 
+.works-item__title-dark {
+  color: #FEFCF7;
+}
+
 .works-item__title--coffee {
   width: 255px;
 }
 
 .works-item__description {
   margin: 0;
+}
+
+.works-item__description-dark {
+  color: #FEFCF7;
 }
 
 @media screen and (max-width: 1280px) {
@@ -1170,6 +1255,7 @@ template {
   padding-bottom: 47px;
   padding-left: 85px;
   padding-right: 85px;
+  margin-bottom: 72px;
 }
 
 .footer__container {
@@ -1200,6 +1286,7 @@ template {
 
 .footer__media-link:last-child {
   margin-right: 0;
+  color: #2C343E;
 }
 
 .footer__media-link-hover:hover {
@@ -1694,7 +1781,8 @@ template {
   margin-left: 0;
 }
 
-.headquarter-item__img {
+.headquarter-item__img-wrapper {
+  min-height: 49px;
   margin-bottom: 45px;
 }
 
@@ -1750,5 +1838,102 @@ template {
   }
   .headquarter-item__description {
     text-align: center;
+  }
+}
+.intro-plan {
+  background: #A2A2A2;
+  background-image: url(../../img/plan-intro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 134px 0 134px 85px;
+  transition: 0.9s ease all;
+  border-radius: 10px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-plan {
+    background: url("../../img/plan-intro@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+.intro-plan__content {
+  max-width: 445px;
+  color: #FEFCF7;
+}
+
+.intro-plan__title {
+  margin: 0;
+  font-family: "Fraunces", serif !important;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #FEFCF7;
+  margin-bottom: 32px;
+}
+
+.intro-plan__description {
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1280px) {
+  .intro-plan {
+    background-image: url(../../img/plan-intro-tablet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 127px 0 126px 58px;
+  }
+}
+@media only screen and (max-width: 1280px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 1280px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-plan {
+    background: url("../../img/plan-intro-tablet@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .intro-plan__content {
+    max-width: 398px;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .intro-plan__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .intro-plan {
+    background-image: url(../../img/plan-intro-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 101px 24px 136px;
+  }
+}
+@media only screen and (max-width: 719px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 719px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-plan {
+    background: url("../../img/plan-intro-mobile@2x.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .intro-plan__content {
+    max-width: 279px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .intro-plan__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .intro-plan__description {
+    font-size: 15px;
+    line-height: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

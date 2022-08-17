@@ -4,6 +4,7 @@
   padding-bottom: 47px;
   padding-left: 85px;
   padding-right: 85px;
+  margin-bottom: 72px;
 }
 
 .footer__container{
@@ -32,6 +33,7 @@
 
 .footer__media-link:last-child{
   margin-right: 0;
+  color: #2C343E;
 }
 
 .footer__media-link-hover:hover{
@@ -42,7 +44,8 @@
 .footer__nav-item-link:hover{
   transition: 0.5s ease all;
   cursor: pointer;
-  color: #FEFCF7;
+  color: #FEFCF7
+;
 }
 
 @media screen and (max-width: $tablet) {

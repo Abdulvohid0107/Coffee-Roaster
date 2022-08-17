@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create plan</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="site-header">
+        <div class="site-header__container">
+          <a href="./index.html" class="site-header__logo">
+            <img
+              src="img/site-logo-black.svg"
+              alt="Site logo"
+              class="site-header__logo-img"
+            />
+          </a>
+
+          <button class="site-header__burger">
+            <span class="site-header__burger-inner"></span>
+            <span class="visually-hidden">Menu toggler button</span>
+          </button>
+
+          <nav class="nav site-header__nav">
+            <ul class="nav__list">
+              <li class="nav__list-item">
+                <a href="./index.html" class="nav__link site-header__nav-link"
+                  >Home</a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a
+                  href="./about-us.html"
+                  class="nav__link site-header__nav-link"
+                  >About us</a
+                >
+              </li>
+              <li class="nav__list-item">
+                <a href="#" class="nav__link site-header__nav-link"
+                  >Create your plan</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <div class="container">
+      <section class="intro-plan">
+        <div class="intro-plan__content">
+          <h1 class="intro-plan__title">Create plan</h1>
+          <p class="intro-plan__description">
+            Build a subscription plan that best fits your needs. We offer an
+            assortment of the best artisan coffees from around the globe
+            delivered fresh to your door.
+          </p>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- WORKS -->
+    <div class="works-dark__wrapper">
+      <div class="container">
+        <section class="works-dark">
+          <h2 class="visually-hidden">How it works</h2>
+          <ol class="works-dark__list">
+            <li class="works-dark__list-item works-item works-item__dark">
+              <p class="works-item__number works-item__number-dark">01</p>
+              <h3 class="works-item__title works-item__title-dark works-item__title--coffee">
+                Pick your coffee
+              </h3>
+              <p class="works-item__description works-item__description-dark">
+                Select from our evolving range of artisan coffees. Our beans are
+                ethically sourced and we pay fair prices for them. There are new
+                coffees in all profiles every month for you to try out.
+              </p>
+            </li>
+            <li class="works-dark__list-item works-item works-item__dark">
+              <p class="works-item__number works-item__number-dark">02</p>
+              <h3 class="works-item__title works-item__title-dark">Choose the frequency</h3>
+              <p class="works-item__description works-item__description-dark">
+                Customize your order frequency, quantity, even your roast style
+                and grind type. Pause, skip or cancel your subscription with no
+                commitment through our online portal.
+              </p>
+            </li>
+            <li class="works-dark__list-item works-item works-item__dark">
+              <p class="works-item__number works-item__number-dark">03</p>
+              <h3 class="works-item__title works-item__title-dark">Receive and enjoy!</h3>
+              <p class="works-item__description works-item__description-dark">
+                We ship your package within 48 hours, freshly roasted. Sit back
+                and enjoy award-winning world-class coffees curated to provide a
+                distinct tasting experience.
+              </p>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </div>
+    <!-- / WORKS / -->
+
+
+    <script>
+      const elToggler = document.querySelector(".site-header__burger");
+      const elHeader = document.querySelector(".site-header");
+
+      elToggler.addEventListener("click", function () {
+        elHeader.classList.toggle("site-header__nav--opened");
+        elToggler.classList.toggle("site-header__burger--opened");
+      });
+    </script>
+  </body>
+</html>
