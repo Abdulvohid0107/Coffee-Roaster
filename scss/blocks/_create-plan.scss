@@ -73,15 +73,6 @@
     transform: translateX(-60%) translateY(-50%) rotate(-45deg);
   }
 
-.create-plan__modal-title{
-  margin: 0;
-  font-family: 'Fraunces', serif;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 48px;
-  color: #FFFFFF;
-}
-
 .create-plan__modal-description{
   margin: 0;
   color: #333D4B;
@@ -131,4 +122,31 @@
     text-align: center;
   }
   
+  .create-plan__modal-description{
+    margin-top: 7px;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .create-plan{
+    margin-top: 120px;
+  }
+
+  .create-plan__button-title-wrapper{
+    max-width: 100%;
+    margin-top: 110px;
+  }
+
+  .create-plan__item-title{
+    font-size: 24px;
+  }
+
+  .create-plan__item-button{
+    margin-left: 69px;
+  }
+
+  .create-plan__modal-description{
+    margin: 0;
+  }
+
 }

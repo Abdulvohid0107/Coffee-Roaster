@@ -2,6 +2,7 @@
   margin-top: 88px;
   padding: 47px 64px;
   background: #2C343E;
+  border-radius: 10px;
 }
 
 .summary-title{
@@ -36,4 +37,16 @@
 .summary-description__creating-plan{
   color:#83888F;
   font-size: 24px;
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .summary{
+    margin-top: 140px;
+    padding: 27px 44px;
+  }
+
+  .summary-link{
+    margin-bottom: 144px;
+  }
 }
