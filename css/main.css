@@ -1958,6 +1958,7 @@ template {
 .create-plan__button-title-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 730px;
   margin-top: 88px;
 }
@@ -1986,6 +1987,8 @@ template {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  width: 19px;
+  height: 12px;
 }
 .create-plan__item-button::before, .create-plan__item-button::after {
   content: "";

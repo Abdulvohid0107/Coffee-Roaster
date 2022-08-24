@@ -16,6 +16,7 @@
 .create-plan__button-title-wrapper{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 730px;
   margin-top: 88px;
 }
@@ -44,6 +45,8 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
+  width: 19px;
+  height: 12px;
 
   &::before,
   &::after{
