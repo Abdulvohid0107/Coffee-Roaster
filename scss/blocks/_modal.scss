@@ -59,6 +59,10 @@
   display: none;
 }
 
+.modal__button-span{
+  display: none;
+}
+
 @media only screen and (max-width: $tablet) {
   .modal-body{
     margin-top: 97px;
@@ -84,11 +88,24 @@
   }
 
   .modal__button-big-screen{
-    display: none;
-  }
-
-  .modal__button-mobile{
-    display: block;
     width: 100%;
   }
+
+
+  .modal__button-span{
+    display: inline;
+  }
+  // .modal__button-mobile{
+  //   display: inline-block;
+  //   width: 100%;
+  // }
+
+  // .close-button {
+  //   float: right;
+  //   width: 1.5rem;
+  //   line-height: 1.5rem;
+  //   text-align: center;
+  //   cursor: pointer;
+  //   border-radius: 0.25rem;
+  // }
 }

@@ -2367,6 +2367,10 @@ template {
   display: none;
 }
 
+.modal__button-span {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .modal-body {
     margin-top: 97px;
@@ -2387,10 +2391,9 @@ template {
     margin-top: 68px;
   }
   .modal__button-big-screen {
-    display: none;
-  }
-  .modal__button-mobile {
-    display: block;
     width: 100%;
+  }
+  .modal__button-span {
+    display: inline;
   }
 }/*# sourceMappingURL=main.css.map */
