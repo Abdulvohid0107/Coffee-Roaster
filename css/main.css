@@ -2077,6 +2077,16 @@ template {
   .create-plan__modal-description {
     margin: 0;
   }
+  .create-plan__modal-description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .create-plan__price-wrapper {
+    margin-top: 24px;
+  }
+  .create-plan__modal-price {
+    display: none;
+  }
 }
 .nav-plan {
   max-width: 255px;
@@ -2324,10 +2334,6 @@ template {
   border-radius: 0.5rem;
 }
 
-.modal-body {
-  margin-top: 57px;
-}
-
 .modal-title {
   margin: 0;
   font-family: "Fraunces", serif;
@@ -2335,6 +2341,10 @@ template {
   font-size: 40px;
   line-height: 48px;
   color: #FFFFFF;
+}
+
+.modal-body {
+  margin-top: 57px;
 }
 
 .close-button {
@@ -2353,8 +2363,34 @@ template {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.modal__button-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .modal-body {
     margin-top: 97px;
+  }
+}
+@media only screen and (max-width: 719px) {
+  .modal-content {
+    padding: 28px 24px 24px;
+    width: 327px;
+    background: rgb(51, 61, 75);
+    background: linear-gradient(180deg, rgb(51, 61, 75) 0%, rgb(51, 61, 75) 15%, rgb(254, 252, 247) 15%);
+  }
+  .modal-title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .modal-body {
+    margin-top: 68px;
+  }
+  .modal__button-big-screen {
+    display: none;
+  }
+  .modal__button-mobile {
+    display: block;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

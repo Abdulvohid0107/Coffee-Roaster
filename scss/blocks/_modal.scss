@@ -24,10 +24,6 @@
   border-radius: 0.5rem;
 }
 
-.modal-body{
-  margin-top: 57px;
-}
-
 .modal-title{
   margin: 0;
   font-family: 'Fraunces', serif;
@@ -35,6 +31,10 @@
   font-size: 40px;
   line-height: 48px;
   color: #FFFFFF;
+}
+
+.modal-body{
+  margin-top: 57px;
 }
 
 .close-button {
@@ -55,8 +55,40 @@
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.modal__button-mobile{
+  display: none;
+}
+
 @media only screen and (max-width: $tablet) {
   .modal-body{
     margin-top: 97px;
+  }
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .modal-content {
+    padding: 28px 24px 24px;
+    width: 327px;
+    background: rgb(51,61,75);
+    background: linear-gradient(180deg, rgba(51,61,75,1) 0%, rgba(51,61,75,1) 15%, rgba(254,252,247,1) 15%);
+  }
+
+  .modal-title{
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .modal-body{
+    margin-top: 68px;
+  }
+
+  .modal__button-big-screen{
+    display: none;
+  }
+
+  .modal__button-mobile{
+    display: block;
+    width: 100%;
   }
 }

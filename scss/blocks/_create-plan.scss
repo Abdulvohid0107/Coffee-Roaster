@@ -152,4 +152,16 @@
     margin: 0;
   }
 
+  .create-plan__modal-description{
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .create-plan__price-wrapper{
+    margin-top: 24px;
+  }
+
+  .create-plan__modal-price{
+    display: none;
+  }
 }
