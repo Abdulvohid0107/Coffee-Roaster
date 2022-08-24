@@ -49,3 +49,9 @@
 .nav-plan__link-number--first{
   color:  #0E8784;
 }
+
+@media only screen and (max-width: $tablet) {
+  .nav-plan{
+    display: none;
+  }
+}

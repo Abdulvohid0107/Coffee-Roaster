@@ -1,0 +1,39 @@
+.summary{
+  margin-top: 88px;
+  padding: 47px 64px;
+  background: #2C343E;
+}
+
+.summary-title{
+  margin: 0;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-weight: 400;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.summary-description{
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.summary-link{
+  border: none;
+  margin-top: 40px;
+  margin-bottom: 168px;
+}
+
+.summary-description__span{
+  color:#0E8784;
+}
+
+.summary-description__creating-plan{
+  color:#83888F;
+  font-size: 24px;
+}

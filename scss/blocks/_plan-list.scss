@@ -1,11 +1,8 @@
 .plan-list{
   @include reset-list;
   display: flex;
+  display: none;
   margin-top: 56px;
-  margin-bottom: 88px;
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
 }
 
 .plan-list__item{
@@ -73,4 +70,32 @@
 .plan-list__description{
   margin: 0;
   margin-top: 24px;
+}
+
+.plan-list--opened{
+  display: flex ;
+}
+
+// .plan-list--opened .plan-list{
+//   display: flex;
+//   animation: 0.3s ease plan-list-open;
+// }
+
+@media only screen and (max-width: $tablet) {
+  .plan-list{
+    margin-top: 40px;
+  }
+
+  .plan-list__item{
+    margin-right: 10px;
+    max-width: 223px;
+  }
+
+  .plan-list__item-content{
+    padding: 32px 26px 84px 23px;
+  }
+
+  .plan-list--opened{
+    display: flex ;
+  }
 }

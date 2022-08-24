@@ -177,7 +177,7 @@
     <div class="container">
       <footer class="footer">
         <div class="footer__container">
-          <a href="" class="footer__logo">
+          <a href="./index.html" class="footer__logo">
             <img
               src="img/site-logo-white.svg"
               alt="Site logo"
@@ -200,7 +200,7 @@
                   >
                 </li>
                 <li class="nav__list-item">
-                  <a href="#" class="nav__link footer__nav-item-link"
+                  <a href="./create-plan.html" class="nav__link footer__nav-item-link"
                     >Create your plan</a
                   >
                 </li>
@@ -266,14 +266,17 @@
     </div>
 
     <!-- / FOOTER / -->
-    <script>
-      const elToggler = document.querySelector(".site-header__burger");
-      const elHeader = document.querySelector(".site-header");
 
-      elToggler.addEventListener("click", function () {
-        elHeader.classList.toggle("site-header__nav--opened");
-        elToggler.classList.toggle("site-header__burger--opened");
-      });
+
+
+    <script>
+          const elToggler = document.querySelector(".site-header__burger");
+          const elHeader = document.querySelector(".site-header");
+
+          elToggler.addEventListener("click", function () {
+            elHeader.classList.toggle("site-header__nav--opened");
+            elToggler.classList.toggle("site-header__burger--opened");
+          });
     </script>
   </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create plan</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
   </head>
   <body>
     <div class="container">
@@ -62,7 +63,6 @@
       </section>
     </div>
 
-
     <!-- WORKS -->
     <div class="works-dark__wrapper">
       <div class="container">
@@ -71,7 +71,9 @@
           <ol class="works-dark__list">
             <li class="works-dark__list-item works-item works-item__dark">
               <p class="works-item__number works-item__number-dark">01</p>
-              <h3 class="works-item__title works-item__title-dark works-item__title--coffee">
+              <h3
+                class="works-item__title works-item__title-dark works-item__title--coffee"
+              >
                 Pick your coffee
               </h3>
               <p class="works-item__description works-item__description-dark">
@@ -82,7 +84,9 @@
             </li>
             <li class="works-dark__list-item works-item works-item__dark">
               <p class="works-item__number works-item__number-dark">02</p>
-              <h3 class="works-item__title works-item__title-dark">Choose the frequency</h3>
+              <h3 class="works-item__title works-item__title-dark">
+                Choose the frequency
+              </h3>
               <p class="works-item__description works-item__description-dark">
                 Customize your order frequency, quantity, even your roast style
                 and grind type. Pause, skip or cancel your subscription with no
@@ -91,7 +95,9 @@
             </li>
             <li class="works-dark__list-item works-item works-item__dark">
               <p class="works-item__number works-item__number-dark">03</p>
-              <h3 class="works-item__title works-item__title-dark">Receive and enjoy!</h3>
+              <h3 class="works-item__title works-item__title-dark">
+                Receive and enjoy!
+              </h3>
               <p class="works-item__description works-item__description-dark">
                 We ship your package within 48 hours, freshly roasted. Sit back
                 and enjoy award-winning world-class coffees curated to provide a
@@ -104,55 +110,104 @@
     </div>
     <!-- / WORKS / -->
 
-
     <!-- Creating plan -->
     <div class="create-plan container">
       <h2 class="visually-hidden"></h2>
       <nav class="nav-plan">
         <ol class="nav-plan__list">
-          <li class="nav-plan__item"><a href="#" class="nav-plan__link"><span class="nav-plan__link-number nav-plan__link-number--first">01</span> preferences</a></li>
-          <li class="nav-plan__item"><a href="#" class="nav-plan__link"><span class="nav-plan__link-number">02</span> bean type</a></li>
-          <li class="nav-plan__item"><a href="#" class="nav-plan__link"><span class="nav-plan__link-number">03</span> quantity</a></li>
-          <li class="nav-plan__item"><a href="#" class="nav-plan__link"><span class="nav-plan__link-number">04</span> grind option</a></li>
-          <li class="nav-plan__item"><a href="#" class="nav-plan__link"><span class="nav-plan__link-number">05</span> deliveries</a></li>
+          <li class="nav-plan__item">
+            <a href="#" class="nav-plan__link"
+              ><span class="nav-plan__link-number nav-plan__link-number--first"
+                >01</span
+              >
+              preferences</a
+            >
+          </li>
+          <li class="nav-plan__item">
+            <a href="#" class="nav-plan__link"
+              ><span class="nav-plan__link-number">02</span> bean type</a
+            >
+          </li>
+          <li class="nav-plan__item">
+            <a href="#" class="nav-plan__link"
+              ><span class="nav-plan__link-number">03</span> quantity</a
+            >
+          </li>
+          <li class="nav-plan__item">
+            <a href="#" class="nav-plan__link"
+              ><span class="nav-plan__link-number">04</span> grind option</a
+            >
+          </li>
+          <li class="nav-plan__item">
+            <a href="#" class="nav-plan__link"
+              ><span class="nav-plan__link-number">05</span> deliveries</a
+            >
+          </li>
         </ol>
       </nav>
 
-      <section class="create-plan__section">
+      <section class="create-plan__section container">
         <ol class="create-plan__list">
           <li class="create-plan__item">
-            <div class="create-plan__button-title-wrapper">
-              <h3 class="create-plan__item-title">How do you drink your coffee?</h3>
+            <div
+              class="create-plan__button-title-wrapper create-plan__button-title-wrapper--first"
+            >
+              <h3 class="create-plan__item-title">
+                How do you drink your coffee?
+              </h3>
               <button class="create-plan__item-button"></button>
             </div>
             <form action="">
-              <ul class="plan-list plan-list--opened">
+              <ul class="plan-list">
                 <li class="plan-list__item">
                   <label for="type-capsule" class="plan-list__item-label">
                   </label>
-                  <input class="plan-list__item-input visually-hidden" id="type-capsule" type="radio" name="preferences">
-                    <div class="plan-list__item-content">
-                      <h4 class="plan-list__title">Capsule</h4>
-                      <p class="plan-list__description">Compatible with Nespresso systems and similar brewers</p>
-                    </div>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    id="type-capsule"
+                    type="radio"
+                    name="preferences"
+                  />
+                  <div class="plan-list__item-content">
+                    <h4 class="plan-list__title">Capsule</h4>
+                    <p class="plan-list__description">
+                      Compatible with Nespresso systems and similar brewers
+                    </p>
+                  </div>
                 </li>
                 <li class="plan-list__item">
                   <label for="type-filter" class="plan-list__item-label">
                   </label>
-                  <input class="plan-list__item-input visually-hidden" id="type-filter" type="radio" name="preferences">
-                    <div class="plan-list__item-content">
-                      <h4 class="plan-list__title">Filter</h4>
-                      <p class="plan-list__description">For pour over or drip methods like Aeropress, Chemex, and V60</p>
-                    </div>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    id="type-filter"
+                    type="radio"
+                    name="preferences"
+                  />
+                  <div class="plan-list__item-content">
+                    <h4 class="plan-list__title">Filter</h4>
+                    <p class="plan-list__description">
+                      For pour over or drip methods like Aeropress, Chemex, and
+                      V60
+                    </p>
+                  </div>
                 </li>
                 <li class="plan-list__item">
                   <label for="type-espresso" class="plan-list__item-label">
                   </label>
-                  <input class="plan-list__item-input visually-hidden" id="type-espresso" type="radio" name="preferences">
-                    <div class="plan-list__item-content">
-                      <h4 class="plan-list__title">Espresso</h4>
-                      <p class="plan-list__description">Dense and finely ground beans for an intense, flavorful experience</p>
-                    </div>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    id="type-espresso"
+                    type="radio"
+                    name="preferences"
+                  />
+                  <div class="plan-list__item-content">
+                    <h4 class="plan-list__title">Espresso</h4>
+                    <p class="plan-list__description">
+                      Dense and finely ground beans for an intense, flavorful
+                      experience
+                    </p>
+                  </div>
                 </li>
               </ul>
             </form>
@@ -165,27 +220,57 @@
             <form action="">
               <ul class="plan-list">
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="type-origin"></label>
-                  <input type="radio" class="plan-list__item-input visually-hidden" id="type-origin" name="bean type">
+                  <label
+                    class="plan-list__item-label"
+                    for="type-origin"
+                  ></label>
+                  <input
+                    type="radio"
+                    class="plan-list__item-input visually-hidden"
+                    id="type-origin"
+                    name="bean type"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Single Origin</h4>
-                    <p class="plan-list__description">Distinct, high quality coffee from a specific family-owned farm</p>
+                    <p class="plan-list__description">
+                      Distinct, high quality coffee from a specific family-owned
+                      farm
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
                   <label class="plan-list__item-label" for="type-decaf"></label>
-                  <input type="radio" class="plan-list__item-input visually-hidden" id="type-decaf" name="bean type">
+                  <input
+                    type="radio"
+                    class="plan-list__item-input visually-hidden"
+                    id="type-decaf"
+                    name="bean type"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Decaf</h4>
-                    <p class="plan-list__description">Just like regular coffee, except the caffeine has been removed</p>
+                    <p class="plan-list__description">
+                      Just like regular coffee, except the caffeine has been
+                      removed
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="type-blended"></label>
-                  <input type="radio" class="plan-list__item-input visually-hidden" id="type-blended" name="bean type">
+                  <label
+                    class="plan-list__item-label"
+                    for="type-blended"
+                  ></label>
+                  <input
+                    type="radio"
+                    class="plan-list__item-input visually-hidden"
+                    id="type-blended"
+                    name="bean type"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Blended</h4>
-                    <p class="plan-list__description">Combination of two or three dark roasted beans of organic coffees</p>
+                    <p class="plan-list__description">
+                      Combination of two or three dark roasted beans of organic
+                      coffees
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -199,27 +284,60 @@
             <form action="">
               <ul class="plan-list">
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="quantity-250g"></label>
-                  <input type="radio" id="quantity-250g" class="plan-list__item-input visually-hidden" name="qunatity">
+                  <label
+                    class="plan-list__item-label"
+                    for="quantity-250g"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="quantity-250g"
+                    class="plan-list__item-input visually-hidden"
+                    name="qunatity"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">250g</h4>
-                    <p class="plan-list__description">Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                    <p class="plan-list__description">
+                      Perfect for the solo drinker. Yields about 12 delicious
+                      cups.
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="quantity-500g"></label>
-                  <input type="radio" id="quantity-500g" class="plan-list__item-input visually-hidden" name="qunatity">
+                  <label
+                    class="plan-list__item-label"
+                    for="quantity-500g"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="quantity-500g"
+                    class="plan-list__item-input visually-hidden"
+                    name="qunatity"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">500g</h4>
-                    <p class="plan-list__description">Perfect option for a couple. Yields about 40 delectable cups.</p>
+                    <p class="plan-list__description">
+                      Perfect option for a couple. Yields about 40 delectable
+                      cups.
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="quantity-1000g"></label>
-                  <input type="radio" id="quantity-1000g" class="plan-list__item-input visually-hidden" name="qunatity">
+                  <label
+                    class="plan-list__item-label"
+                    for="quantity-1000g"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="quantity-1000g"
+                    class="plan-list__item-input visually-hidden"
+                    name="qunatity"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">1000g</h4>
-                    <p class="plan-list__description">Perfect for offices and events. Yields about 90 delightful cups.</p>
+                    <p class="plan-list__description">
+                      Perfect for offices and events. Yields about 90 delightful
+                      cups.
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -233,27 +351,59 @@
             <form action="">
               <ul class="plan-list">
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="grind-wholebean"></label>
-                  <input class="plan-list__item-input visually-hidden" type="radio" id="grind-wholebean" name="grind option"> 
+                  <label
+                    class="plan-list__item-label"
+                    for="grind-wholebean"
+                  ></label>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    type="radio"
+                    id="grind-wholebean"
+                    name="grind option"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Wholebean</h4>
-                    <p class="plan-list__description">Best choice if you cherish the full sensory experience</p>
+                    <p class="plan-list__description">
+                      Best choice if you cherish the full sensory experience
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="grind-filter"></label>
-                  <input class="plan-list__item-input visually-hidden" type="radio" id="grind-filter" name="grind option"> 
+                  <label
+                    class="plan-list__item-label"
+                    for="grind-filter"
+                  ></label>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    type="radio"
+                    id="grind-filter"
+                    name="grind option"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Filter</h4>
-                    <p class="plan-list__description">For drip or pour-over coffee methods such as V60 or Aeropress</p>
+                    <p class="plan-list__description">
+                      For drip or pour-over coffee methods such as V60 or
+                      Aeropress
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="grind-cafetiere"></label>
-                  <input class="plan-list__item-input visually-hidden" type="radio" id="grind-cafetiere" name="grind option"> 
+                  <label
+                    class="plan-list__item-label"
+                    for="grind-cafetiere"
+                  ></label>
+                  <input
+                    class="plan-list__item-input visually-hidden"
+                    type="radio"
+                    id="grind-cafetiere"
+                    name="grind option"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Cafetiére</h4>
-                    <p class="plan-list__description">Course ground beans specially suited for french press coffee</p>
+                    <p class="plan-list__description">
+                      Course ground beans specially suited for french press
+                      coffee
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -261,49 +411,93 @@
           </li>
           <li class="create-plan__item">
             <div class="create-plan__button-title-wrapper">
-              <h3 class="create-plan__item-title">How often should we deliver?</h3>
+              <h3 class="create-plan__item-title">
+                How often should we deliver?
+              </h3>
               <button class="create-plan__item-button"></button>
             </div>
             <form action="">
               <ul class="plan-list">
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="delivery-week"></label>
-                  <input type="radio" id="delivery-week"  class="plan-list__item-input visually-hidden" name="deliveries">
+                  <label
+                    class="plan-list__item-label"
+                    for="delivery-week"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="delivery-week"
+                    class="plan-list__item-input visually-hidden"
+                    name="deliveries"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Every week</h4>
-                    <p class="plan-list__description">$7.20 per shipment. Includes free first-class shipping.</p>
+                    <p class="plan-list__description">
+                      $7.20 per shipment. Includes free first-class shipping.
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="delivery-weeks"></label>
-                  <input type="radio" id="delivery-weeks" class="plan-list__item-input visually-hidden" name="deliveries">
+                  <label
+                    class="plan-list__item-label"
+                    for="delivery-weeks"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="delivery-weeks"
+                    class="plan-list__item-input visually-hidden"
+                    name="deliveries"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Every 2 weeks</h4>
-                    <p class="plan-list__description">$9.60 per shipment. Includes free priority shipping.</p>
+                    <p class="plan-list__description">
+                      $9.60 per shipment. Includes free priority shipping.
+                    </p>
                   </div>
                 </li>
                 <li class="plan-list__item">
-                  <label class="plan-list__item-label" for="delivery-month"></label>
-                  <input type="radio" id="delivery-month" class="plan-list__item-input visually-hidden" name="deliveries">
+                  <label
+                    class="plan-list__item-label"
+                    for="delivery-month"
+                  ></label>
+                  <input
+                    type="radio"
+                    id="delivery-month"
+                    class="plan-list__item-input visually-hidden"
+                    name="deliveries"
+                  />
                   <div class="plan-list__item-content">
                     <h4 class="plan-list__title">Every month</h4>
-                    <p class="plan-list__description">$12.00 per shipment. Includes free priority shipping.</p>
+                    <p class="plan-list__description">
+                      $12.00 per shipment. Includes free priority shipping.
+                    </p>
                   </div>
                 </li>
               </ul>
             </form>
           </li>
         </ol>
+
+        <div class="summary">
+          <h4 class="summary-title">order summary</h4>
+          <p class="summary-description">
+            “I drink my coffee as <span class="summary-description__span">Filter</span>, with a <span class="summary-description__span">Decaf</span> type of bean. <span class="summary-description__span">250g</span>  ground ala <span class="summary-description__span">Cafetiére</span>, sent to me <span class="summary-description__span">Every Week</span> .”
+          </p>
+        </div>
+
+        <div class="create-plan__button-wrapper">
+          <button type="button" class="summary-link main-link trigger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Create your plan
+          </button>
+        </div>
       </section>
     </div>
     <!-- / Createing a plan / -->
-
 
     <!-- FOOTER -->
     <div class="container">
       <footer class="footer">
         <div class="footer__container">
-          <a href="" class="footer__logo">
+          <a href="#" class="footer__logo">
             <img
               src="img/site-logo-white.svg"
               alt="Site logo"
@@ -314,9 +508,7 @@
             <nav class="nav footer__nav">
               <ul class="nav__list">
                 <li class="nav__list-item">
-                  <a
-                    href="./index.html"
-                    class="nav__link footer__nav-item-link"
+                  <a href="./index.html" class="nav__link footer__nav-item-link"
                     >Home</a
                   >
                 </li>
@@ -335,7 +527,6 @@
                   >
                 </li>
               </ul>
-              
             </nav>
             <ul class="footer__social-media-links">
               <li class="footer__media-link">
@@ -397,6 +588,52 @@
     </div>
     <!-- / FOOTER / -->
 
+    <!-- <button class="trigger">Click here to trigger the modal!</button> -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <span class="close-button">×</span> -->
+          <h5 class="modal-title create-plan__modal-title" id="staticBackdropLabel">Order Summary</h5>
+        </div>
+        <div class="modal-body create-plan__modal-body">
+            <p class="summary-description summary-description__creating-plan">
+              “I drink my coffee as <span class="summary-description__span">Filter</span>, with a <span class="summary-description__span">Decaf</span> type of bean. <span class="summary-description__span">250g</span>  ground ala <span class="summary-description__span">Cafetiére</span>, sent to me <span class="summary-description__span">Every Week</span> .”
+            </p>
+            <p class="create-plan__modal-description">
+              Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+            </p>
+            <div class="create-plan__price-wrapper">
+              <p class="create-plan__modal-price">$14.00/ mo</p>
+              <button type="submit" class="close-button main-link" data-bs-dismiss="modal">Checkout</button>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog create-plan__model-dialog">
+        <div class="modal-content create-plan__modal-content">
+          <div class="modal-header create-plan__modal-header">
+            <h5 class="modal-title create-plan__modal-title" id="staticBackdropLabel">Order Summary</h5>
+          </div>
+          <div class="modal-body create-plan__modal-body">
+            <p class="summary-description summary-description__creating-plan">
+              “I drink my coffee as <span class="summary-description__span">Filter</span>, with a <span class="summary-description__span">Decaf</span> type of bean. <span class="summary-description__span">250g</span>  ground ala <span class="summary-description__span">Cafetiére</span>, sent to me <span class="summary-description__span">Every Week</span> .”
+            </p>
+            <p class="create-plan__modal-description">
+              Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout. 
+            </p>
+            <div class="d-flex align-items-baseline justify-content-between">
+              <p class="create-plan__modal-price">$14.00/ mo</p>
+              <button type="submit" class="main-link" data-bs-dismiss="modal">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- / MODAL / -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script> -->
 
     <script>
       const elToggler = document.querySelector(".site-header__burger");
@@ -406,6 +643,37 @@
         elHeader.classList.toggle("site-header__nav--opened");
         elToggler.classList.toggle("site-header__burger--opened");
       });
+
+      const elButtons = document.querySelectorAll(".create-plan__item-button");
+
+      elButtons.forEach((elButton) => {
+        elButton.addEventListener("click", function () {
+          const elOptions = elButton
+            .closest(".create-plan__item")
+            .querySelector(".plan-list");
+          console.log(elOptions);
+          elButton.classList.toggle("create-plan__item-button-opened");
+          elOptions.classList.toggle("plan-list--opened");
+        });
+      });
+
+      const modal = document.querySelector(".modal");
+      const trigger = document.querySelector(".trigger");
+      const closeButton = document.querySelector(".close-button");
+
+      function toggleModal() {
+          modal.classList.toggle("show-modal");
+      }
+
+      function windowOnClick(event) {
+          if (event.target === modal) {
+              toggleModal();
+          }
+      }
+
+      trigger.addEventListener("click", toggleModal);
+      closeButton.addEventListener("click", toggleModal);
+      window.addEventListener("click", windowOnClick);
     </script>
   </body>
 </html>
