@@ -83,6 +83,12 @@
 }
 
 @media only screen and (max-width: $tablet) {
+  @keyframes plan-list-open {
+    0%{
+      transform: translateY(-18%);
+    }
+  }
+
   .plan-list{
     margin-top: 40px;
   }
@@ -99,10 +105,21 @@
   .plan-list--opened{
     display: flex ;
   }
+
+  .plan-list--opened {
+    display: flex;
+    animation:  plan-list-open 0.9s ease;
+  }
 }
 
 
 @media only screen and (max-width: $mobile) {
+  @keyframes plan-list-open {
+    0%{
+      transform: translateY(-10%);
+    }
+  }
+
   .plan-list{
     margin-top: 32px;
     flex-direction: column;
@@ -133,5 +150,10 @@
   .plan-list__description{
     margin: 0;
     margin-top: 8px;
+  }
+
+  .plan-list--opened {
+    display: flex;
+    animation:  plan-list-open 0.9s ease;
   }
 }
