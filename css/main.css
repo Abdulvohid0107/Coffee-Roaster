@@ -2144,6 +2144,16 @@ template {
     display: none;
   }
 }
+@-webkit-keyframes plan-list-open {
+  0% {
+    transform: translateY(-20%);
+  }
+}
+@keyframes plan-list-open {
+  0% {
+    transform: translateY(-20%);
+  }
+}
 .plan-list {
   padding: 0;
   margin: 0;
@@ -2213,6 +2223,12 @@ template {
 
 .plan-list--opened {
   display: flex;
+}
+
+.plan-list--opened {
+  display: flex;
+  -webkit-animation: plan-list-open 0.9s ease;
+          animation: plan-list-open 0.9s ease;
 }
 
 @media only screen and (max-width: 1280px) {
